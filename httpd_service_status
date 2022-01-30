@@ -1,0 +1,25 @@
+● httpd.service - The Apache HTTP Server
+   Loaded: loaded (/usr/lib/systemd/system/httpd.service; disabled; vendor preset: disabled)
+   Active: active (running) since Sun 2022-01-30 20:05:16 KST; 1min 32s ago
+     Docs: man:httpd.service(8)
+  Process: 51289 ExecReload=/usr/sbin/httpd $OPTIONS -k graceful (code=exited, status=0/SUCCESS)
+ Main PID: 50847 (httpd)
+   Status: "Running, listening on: port 80"
+    Tasks: 213 (limit: 24596)
+   Memory: 44.9M
+   CGroup: /system.slice/httpd.service
+           ├─50847 /usr/sbin/httpd -DFOREGROUND
+           ├─51290 /usr/sbin/httpd -DFOREGROUND
+           ├─51291 /usr/sbin/httpd -DFOREGROUND
+           ├─51292 /usr/sbin/httpd -DFOREGROUND
+           └─51293 /usr/sbin/httpd -DFOREGROUND
+
+Jan 30 20:05:16 server1.example.com systemd[1]: Starting The Apache HTTP Server...
+Jan 30 20:05:16 server1.example.com systemd[1]: Started The Apache HTTP Server.
+Jan 30 20:05:16 server1.example.com httpd[50847]: Server configured, listening on: port 80
+Jan 30 20:05:39 server1.example.com systemd[1]: Reloading The Apache HTTP Server.
+Jan 30 20:05:39 server1.example.com systemd[1]: Reloaded The Apache HTTP Server.
+Jan 30 20:05:39 server1.example.com httpd[50847]: Server configured, listening on: port 80
+Jan 30 20:05:49 server1.example.com systemd[1]: Reloading The Apache HTTP Server.
+Jan 30 20:05:49 server1.example.com systemd[1]: Reloaded The Apache HTTP Server.
+Jan 30 20:05:49 server1.example.com httpd[50847]: Server configured, listening on: port 80
