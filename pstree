@@ -1,0 +1,79 @@
+systemd-+-ModemManager---2*[{ModemManager}]
+        |-NetworkManager---2*[{NetworkManager}]
+        |-VGAuthService
+        |-accounts-daemon---2*[{accounts-daemon}]
+        |-alsactl
+        |-atd
+        |-auditd-+-sedispatch
+        |        `-2*[{auditd}]
+        |-avahi-daemon---avahi-daemon
+        |-bluetoothd
+        |-colord---2*[{colord}]
+        |-crond
+        |-cupsd
+        |-dbus-daemon---{dbus-daemon}
+        |-dnsmasq---dnsmasq
+        |-firewalld---{firewalld}
+        |-gdm-+-gdm-session-wor-+-gdm-wayland-ses-+-gnome-session-b-+-gnome-shell-+-Xwayland---12*[{Xwayland}]
+        |     |                 |                 |                 |             |-ibus-daemon-+-ibus-dconf---3*[{ibus-dconf}]
+        |     |                 |                 |                 |             |             |-ibus-engine-sim---2*[{ibus-engine+
+        |     |                 |                 |                 |             |             `-2*[{ibus-daemon}]
+        |     |                 |                 |                 |             `-19*[{gnome-shell}]
+        |     |                 |                 |                 |-gsd-a11y-settin---3*[{gsd-a11y-settin}]
+        |     |                 |                 |                 |-gsd-clipboard---2*[{gsd-clipboard}]
+        |     |                 |                 |                 |-gsd-color---3*[{gsd-color}]
+        |     |                 |                 |                 |-gsd-datetime---2*[{gsd-datetime}]
+        |     |                 |                 |                 |-gsd-housekeepin---2*[{gsd-housekeepin}]
+        |     |                 |                 |                 |-gsd-keyboard---3*[{gsd-keyboard}]
+        |     |                 |                 |                 |-gsd-media-keys---3*[{gsd-media-keys}]
+        |     |                 |                 |                 |-gsd-mouse---2*[{gsd-mouse}]
+        |     |                 |                 |                 |-gsd-power---3*[{gsd-power}]
+        |     |                 |                 |                 |-gsd-print-notif---2*[{gsd-print-notif}]
+        |     |                 |                 |                 |-gsd-rfkill---2*[{gsd-rfkill}]
+        |     |                 |                 |                 |-gsd-screensaver---2*[{gsd-screensaver}]
+        |     |                 |                 |                 |-gsd-sharing---3*[{gsd-sharing}]
+        |     |                 |                 |                 |-gsd-smartcard---5*[{gsd-smartcard}]
+        |     |                 |                 |                 |-gsd-sound---3*[{gsd-sound}]
+        |     |                 |                 |                 |-gsd-wacom---3*[{gsd-wacom}]
+        |     |                 |                 |                 |-gsd-xsettings---3*[{gsd-xsettings}]
+        |     |                 |                 |                 `-3*[{gnome-session-b}]
+        |     |                 |                 `-2*[{gdm-wayland-ses}]
+        |     |                 `-2*[{gdm-session-wor}]
+        |     `-2*[{gdm}]
+        |-gssproxy---5*[{gssproxy}]
+        |-ibus-x11---14*[{ibus-x11}]
+        |-irqbalance---{irqbalance}
+        |-ksmtuned---sleep
+        |-lsmd
+        |-mcelog
+        |-packagekitd---2*[{packagekitd}]
+        |-polkitd---7*[{polkitd}]
+        |-rhsmcertd
+        |-rpcbind
+        |-rsyslogd---2*[{rsyslogd}]
+        |-rtkit-daemon---2*[{rtkit-daemon}]
+        |-smartd
+        |-sshd---sshd---sshd---bash---pstree
+        |-sssd-+-sssd_be
+        |      `-sssd_nss
+        |-systemd-+-(sd-pam)
+        |         |-dbus-daemon---{dbus-daemon}
+        |         |-gvfsd---2*[{gvfsd}]
+        |         `-gvfsd-fuse---5*[{gvfsd-fuse}]
+        |-systemd-+-(sd-pam)
+        |         |-at-spi-bus-laun-+-dbus-daemon---{dbus-daemon}
+        |         |                 `-3*[{at-spi-bus-laun}]
+        |         |-at-spi2-registr---2*[{at-spi2-registr}]
+        |         |-dbus-daemon---{dbus-daemon}
+        |         |-ibus-portal---2*[{ibus-portal}]
+        |         |-pulseaudio---2*[{pulseaudio}]
+        |         `-xdg-permission----2*[{xdg-permission-}]
+        |-systemd-journal
+        |-systemd-logind
+        |-systemd-machine
+        |-systemd-udevd
+        |-tuned---3*[{tuned}]
+        |-udisksd---4*[{udisksd}]
+        |-upowerd---2*[{upowerd}]
+        |-vmtoolsd---2*[{vmtoolsd}]
+        `-wpa_supplicant
