@@ -1,0 +1,15 @@
+Sat Jan 29 18:56:56 KST 2022
+/tmp
+dirlist
+error.log
+hello-file
+result.txt
+systemd-private-00fae33654444e91abb57e128025ead9-bluetooth.service-gEITqg
+systemd-private-00fae33654444e91abb57e128025ead9-colord.service-oUITtj
+systemd-private-00fae33654444e91abb57e128025ead9-ModemManager.service-MVXTHi
+systemd-private-00fae33654444e91abb57e128025ead9-rtkit-daemon.service-4DSKng
+tracker-extract-files.0
+vmware-root_1002-2957518059
+vmware-root_1008-2965579127
+vmware-root_962-2990678749
+vmware-root_981-4290756372
