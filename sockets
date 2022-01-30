@@ -1,0 +1,32 @@
+LISTEN                                UNIT                            ACTIVATES
+/dev/rfkill                           systemd-rfkill.socket           systemd-rfkill.service
+/run/avahi-daemon/socket              avahi-daemon.socket             avahi-daemon.service
+/run/dbus/system_bus_socket           dbus.socket                     dbus.service
+/run/dmeventd-client                  dm-event.socket                 dm-event.service
+/run/dmeventd-server                  dm-event.socket                 dm-event.service
+/run/initctl                          systemd-initctl.socket          systemd-initctl.service
+/run/libvirt/libvirt-admin-sock       libvirtd-admin.socket           libvirtd.service
+/run/libvirt/libvirt-sock             libvirtd.socket                 libvirtd.service
+/run/libvirt/libvirt-sock-ro          libvirtd-ro.socket              libvirtd.service
+/run/libvirt/virtlockd-sock           virtlockd.socket                virtlockd.service
+/run/libvirt/virtlogd-sock            virtlogd.socket                 virtlogd.service
+/run/lvm/lvmpolld.socket              lvm2-lvmpolld.socket            lvm2-lvmpolld.service
+/run/rpcbind.sock                     rpcbind.socket                  rpcbind.service
+/run/systemd/coredump                 systemd-coredump.socket        
+/run/systemd/journal/dev-log          systemd-journald-dev-log.socket systemd-journald.service
+/run/systemd/journal/socket           systemd-journald.socket         systemd-journald.service
+/run/systemd/journal/stdout           systemd-journald.socket         systemd-journald.service
+/run/udev/control                     systemd-udevd-control.socket    systemd-udevd.service
+/var/run/.heim_org.h5l.kcm-socket     sssd-kcm.socket                 sssd-kcm.service
+/var/run/cups/cups.sock               cups.socket                     cups.service
+0.0.0.0:111                           rpcbind.socket                  rpcbind.service
+0.0.0.0:111                           rpcbind.socket                  rpcbind.service
+@/org/kernel/linux/storage/multipathd multipathd.socket               multipathd.service
+@ISCSIADM_ABSTRACT_NAMESPACE          iscsid.socket                   iscsid.service
+@ISCSID_UIP_ABSTRACT_NAMESPACE        iscsiuio.socket                 iscsiuio.service
+[::]:111                              rpcbind.socket                  rpcbind.service
+[::]:111                              rpcbind.socket                  rpcbind.service
+kobject-uevent 1                      systemd-udevd-kernel.socket     systemd-udevd.service
+
+28 sockets listed.
+Pass --all to see loaded but inactive sockets, too.
