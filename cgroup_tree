@@ -1,0 +1,154 @@
+Control group /:
+-.slice
+├─user.slice
+│ ├─user-0.slice
+│ │ ├─session-6.scope
+│ │ │ ├─49525 sshd: root [priv]
+│ │ │ ├─49550 sshd: root@pts/0
+│ │ │ ├─49555 -bash
+│ │ │ └─52898 systemd-cgls
+│ │ └─user@0.service
+│ │   ├─gvfs-daemon.service
+│ │   │ ├─49582 /usr/libexec/gvfsd
+│ │   │ └─49587 /usr/libexec/gvfsd-fuse /run/user/0/gvfs -f -o big_writes
+│ │   ├─init.scope
+│ │   │ ├─49531 /usr/lib/systemd/systemd --user
+│ │   │ └─49537 (sd-pam)
+│ │   └─dbus.service
+│ │     └─49579 /usr/bin/dbus-daemon --session --address=systemd: --nofork --...
+│ └─user-42.slice
+│   ├─session-c1.scope
+│   │ ├─1482 gdm-session-worker [pam/gdm-launch-environment]
+│   │ ├─1530 /usr/libexec/gdm-wayland-session --register-session gnome-sessio...
+│   │ ├─1570 /usr/libexec/gnome-session-binary --autostart /usr/share/gdm/gre...
+│   │ ├─1599 /usr/bin/gnome-shell
+│   │ ├─1708 /usr/bin/Xwayland :1024 -rootless -terminate -accessx -core -lis...
+│   │ ├─1738 ibus-daemon --xim --panel disable
+│   │ ├─1741 /usr/libexec/ibus-dconf
+│   │ ├─1744 /usr/libexec/ibus-x11 --kill-daemon
+│   │ ├─1801 /usr/libexec/gsd-xsettings
+│   │ ├─1802 /usr/libexec/gsd-a11y-settings
+│   │ ├─1805 /usr/libexec/gsd-clipboard
+│   │ ├─1808 /usr/libexec/gsd-color
+│   │ ├─1810 /usr/libexec/gsd-datetime
+│   │ ├─1812 /usr/libexec/gsd-housekeeping
+│   │ ├─1815 /usr/libexec/gsd-keyboard
+│   │ ├─1818 /usr/libexec/gsd-media-keys
+│   │ ├─1824 /usr/libexec/gsd-mouse
+│   │ ├─1826 /usr/libexec/gsd-power
+│   │ ├─1833 /usr/libexec/gsd-print-notifications
+│   │ ├─1836 /usr/libexec/gsd-rfkill
+│   │ ├─1841 /usr/libexec/gsd-screensaver-proxy
+│   │ ├─1843 /usr/libexec/gsd-sharing
+│   │ ├─1848 /usr/libexec/gsd-smartcard
+│   │ ├─1853 /usr/libexec/gsd-sound
+│   │ ├─1857 /usr/libexec/gsd-wacom
+│   │ └─1910 /usr/libexec/ibus-engine-simple
+│   └─user@42.service
+│     ├─xdg-permission-store.service
+│     │ └─1754 /usr/libexec/xdg-permission-store
+│     ├─pulseaudio.service
+│     │ └─1526 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+│     ├─init.scope
+│     │ ├─1488 /usr/lib/systemd/systemd --user
+│     │ └─1492 (sd-pam)
+│     ├─at-spi-dbus-bus.service
+│     │ ├─1722 /usr/libexec/at-spi-bus-launcher
+│     │ ├─1727 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2...
+│     │ └─1730 /usr/libexec/at-spi2-registryd --use-gnome-session
+│     └─dbus.service
+│       ├─1549 /usr/bin/dbus-daemon --session --address=systemd: --nofork --n...
+│       └─1750 /usr/libexec/ibus-portal
+├─init.scope
+│ └─1 /usr/lib/systemd/systemd --switched-root --system --deserialize 17
+└─system.slice
+  ├─irqbalance.service
+  │ └─1002 /usr/sbin/irqbalance --foreground
+  ├─libstoragemgmt.service
+  │ └─951 /usr/bin/lsmd -d
+  ├─packagekit.service
+  │ └─1786 /usr/libexec/packagekitd
+  ├─systemd-udevd.service
+  │ └─782 /usr/lib/systemd/systemd-udevd
+  ├─vgauthd.service
+  │ └─989 /usr/bin/VGAuthService -s
+  ├─polkit.service
+  │ └─945 /usr/lib/polkit-1/polkitd --no-debug
+  ├─rtkit-daemon.service
+  │ └─978 /usr/libexec/rtkit-daemon
+  ├─bluetooth.service
+  │ └─981 /usr/libexec/bluetooth/bluetoothd
+  ├─auditd.service
+  │ ├─917 /sbin/auditd
+  │ └─919 /usr/sbin/sedispatch
+  ├─tuned.service
+  │ └─1219 /usr/libexec/platform-python -Es /usr/sbin/tuned -l -P
+  ├─accounts-daemon.service
+  │ └─1142 /usr/libexec/accounts-daemon
+  ├─wpa_supplicant.service
+  │ └─1806 /usr/sbin/wpa_supplicant -c /etc/wpa_supplicant/wpa_supplicant.con...
+  ├─libvirtd.service
+  │ ├─1663 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.con...
+  │ └─1664 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.con...
+  ├─ModemManager.service
+  │ └─980 /usr/sbin/ModemManager
+  ├─systemd-journald.service
+  │ └─740 /usr/lib/systemd/systemd-journald
+  ├─atd.service
+  │ └─1458 /usr/sbin/atd -f
+  ├─sshd.service
+  │ └─1229 /usr/sbin/sshd -D -oCiphers=aes256-gcm@openssh.com,chacha20-poly13...
+  ├─crond.service
+  │ └─1463 /usr/sbin/crond -n
+  ├─colord.service
+  │ └─1873 /usr/libexec/colord
+  ├─NetworkManager.service
+  │ └─1209 /usr/sbin/NetworkManager --no-daemon
+  ├─gdm.service
+  │ └─1459 /usr/sbin/gdm
+  ├─systemd-machined.service
+  │ └─964 /usr/lib/systemd/systemd-machined
+  ├─gssproxy.service
+  │ └─1232 /usr/sbin/gssproxy -D
+  ├─rsyslog.service
+  │ └─1449 /usr/sbin/rsyslogd -n
+  ├─firewalld.service
+  │ └─1088 /usr/libexec/platform-python -s /usr/sbin/firewalld --nofork --nopid
+  ├─ksmtuned.service
+  │ ├─ 1034 /bin/bash /usr/sbin/ksmtuned
+  │ └─52895 sleep 60
+  ├─vmtoolsd.service
+  │ └─996 /usr/bin/vmtoolsd
+  ├─rpcbind.service
+  │ └─915 /usr/bin/rpcbind -w -f
+  ├─alsa-state.service
+  │ └─947 /usr/sbin/alsactl -s -n 19 -c -E ALSA_CONFIG_PATH=/etc/alsa/alsactl...
+  ├─sssd.service
+  │ ├─ 979 /usr/sbin/sssd -i --logger=files
+  │ ├─1057 /usr/libexec/sssd/sssd_be --domain implicit_files --uid 0 --gid 0...
+  │ └─1080 /usr/libexec/sssd/sssd_nss --uid 0 --gid 0 --logger=files
+  ├─httpd.service
+  │ ├─52352 /usr/sbin/httpd -DFOREGROUND
+  │ ├─52356 /usr/sbin/httpd -DFOREGROUND
+  │ ├─52357 /usr/sbin/httpd -DFOREGROUND
+  │ ├─52358 /usr/sbin/httpd -DFOREGROUND
+  │ └─52359 /usr/sbin/httpd -DFOREGROUND
+  ├─rhsmcertd.service
+  │ └─1235 /usr/bin/rhsmcertd
+  ├─cups.service
+  │ └─1223 /usr/sbin/cupsd -l
+  ├─upower.service
+  │ └─1772 /usr/libexec/upowerd
+  ├─mcelog.service
+  │ └─1003 /usr/sbin/mcelog --ignorenodev --daemon --foreground
+  ├─udisks2.service
+  │ └─948 /usr/libexec/udisks2/udisksd
+  ├─dbus.service
+  │ └─955 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfi...
+  ├─avahi-daemon.service
+  │ ├─ 959 avahi-daemon: running [server1.local]
+  │ └─1054 avahi-daemon: chroot helper
+  ├─smartd.service
+  │ └─969 /usr/sbin/smartd -n -q never
+  └─systemd-logind.service
+    └─1146 /usr/lib/systemd/systemd-logind
