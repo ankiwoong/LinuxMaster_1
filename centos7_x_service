@@ -1,0 +1,79 @@
+UNIT                               LOAD   ACTIVE SUB     DESCRIPTION                                                                  
+accounts-daemon.service            loaded active running Accounts Service                                                             
+alsa-state.service                 loaded active running Manage Sound Card State (restore and store)                                  
+atd.service                        loaded active running Job spooling tools                                                           
+auditd.service                     loaded active running Security Auditing Service                                                    
+avahi-daemon.service               loaded active running Avahi mDNS/DNS-SD Stack                                                      
+bluetooth.service                  loaded active running Bluetooth service                                                            
+colord.service                     loaded active running Manage, Install and Generate Color Profiles                                  
+crond.service                      loaded active running Command Scheduler                                                            
+cups.service                       loaded active running CUPS Scheduler                                                               
+dbus.service                       loaded active running D-Bus System Message Bus                                                     
+dracut-shutdown.service            loaded active exited  Restore /run/initramfs on shutdown                                           
+firewalld.service                  loaded active running firewalld - dynamic firewall daemon                                          
+gcc-toolset-10-systemtap.service   loaded active exited  LSB: Start and stop systemtap scripts                                        
+gcc-toolset-11-systemtap.service   loaded active exited  LSB: Start and stop systemtap scripts                                        
+gcc-toolset-9-systemtap.service    loaded active exited  LSB: Start and stop systemtap scripts                                        
+gdm.service                        loaded active running GNOME Display Manager                                                        
+gssproxy.service                   loaded active running GSSAPI Proxy Daemon                                                          
+import-state.service               loaded active exited  Import network configuration from initramfs                                  
+irqbalance.service                 loaded active running irqbalance daemon                                                            
+iscsi-shutdown.service             loaded active exited  Logout off all iSCSI sessions on shutdown                                    
+kmod-static-nodes.service          loaded active exited  Create list of required static device nodes for the current kernel           
+ksm.service                        loaded active exited  Kernel Samepage Merging                                                      
+ksmtuned.service                   loaded active running Kernel Samepage Merging (KSM) Tuning Daemon                                  
+libstoragemgmt.service             loaded active running libstoragemgmt plug-in server daemon                                         
+lvm2-monitor.service               loaded active exited  Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling
+lvm2-pvscan@8:2.service            loaded active exited  LVM event activation on device 8:2                                           
+mcelog.service                     loaded active running Machine Check Exception Logging Daemon                                       
+ModemManager.service               loaded active running Modem Manager                                                                
+NetworkManager-wait-online.service loaded active exited  Network Manager Wait Online                                                  
+NetworkManager.service             loaded active running Network Manager                                                              
+nis-domainname.service             loaded active exited  Read and set NIS domainname from /etc/sysconfig/network                      
+packagekit.service                 loaded active running PackageKit Daemon                                                            
+plymouth-quit-wait.service         loaded active exited  Hold until boot process finishes up                                          
+plymouth-read-write.service        loaded active exited  Tell Plymouth To Write Out Runtime Data                                      
+plymouth-start.service             loaded active exited  Show Plymouth Boot Screen                                                    
+polkit.service                     loaded active running Authorization Manager                                                        
+rhsmcertd.service                  loaded active running Enable periodic update of entitlement certificates.                          
+rpc-statd-notify.service           loaded active exited  Notify NFS peers of a restart                                                
+rpcbind.service                    loaded active running RPC Bind                                                                     
+rsyslog.service                    loaded active running System Logging Service                                                       
+rtkit-daemon.service               loaded active running RealtimeKit Scheduling Policy Service                                        
+smartd.service                     loaded active running Self Monitoring and Reporting Technology (SMART) Daemon                      
+sshd.service                       loaded active running OpenSSH server daemon                                                        
+sssd.service                       loaded active running System Security Services Daemon                                              
+systemd-binfmt.service             loaded active exited  Set Up Additional Binary Formats                                             
+systemd-journal-flush.service      loaded active exited  Flush Journal to Persistent Storage                                          
+systemd-journald.service           loaded active running Journal Service                                                              
+systemd-logind.service             loaded active running Login Service                                                                
+systemd-machined.service           loaded active running Virtual Machine and Container Registration Service                           
+systemd-modules-load.service       loaded active exited  Load Kernel Modules                                                          
+systemd-random-seed.service        loaded active exited  Load/Save Random Seed                                                        
+systemd-remount-fs.service         loaded active exited  Remount Root and Kernel File Systems                                         
+systemd-sysctl.service             loaded active exited  Apply Kernel Variables                                                       
+systemd-tmpfiles-setup-dev.service loaded active exited  Create Static Device Nodes in /dev                                           
+systemd-tmpfiles-setup.service     loaded active exited  Create Volatile Files and Directories                                        
+systemd-udev-settle.service        loaded active exited  udev Wait for Complete Device Initialization                                 
+systemd-udev-trigger.service       loaded active exited  udev Coldplug all Devices                                                    
+systemd-udevd.service              loaded active running udev Kernel Device Manager                                                   
+systemd-update-utmp.service        loaded active exited  Update UTMP about System Boot/Shutdown                                       
+systemd-user-sessions.service      loaded active exited  Permit User Sessions                                                         
+tuned.service                      loaded active running Dynamic System Tuning Daemon                                                 
+udisks2.service                    loaded active running Disk Manager                                                                 
+upower.service                     loaded active running Daemon for power management                                                  
+user-runtime-dir@0.service         loaded active exited  /run/user/0 mount wrapper                                                    
+user-runtime-dir@42.service        loaded active exited  /run/user/42 mount wrapper                                                   
+user@0.service                     loaded active running User Manager for UID 0                                                       
+user@42.service                    loaded active running User Manager for UID 42                                                      
+vdo.service                        loaded active exited  VDO volume services                                                          
+vgauthd.service                    loaded active running VGAuth Service for open-vm-tools                                             
+vmtoolsd.service                   loaded active running Service for virtual machines hosted on VMware                                
+wpa_supplicant.service             loaded active running WPA supplicant                                                               
+
+LOAD   = Reflects whether the unit definition was properly loaded.
+ACTIVE = The high-level unit activation state, i.e. generalization of SUB.
+SUB    = The low-level unit activation state, values depend on unit type.
+
+71 loaded units listed. Pass --all to see loaded but inactive units, too.
+To show all installed unit files use 'systemctl list-unit-files'.
