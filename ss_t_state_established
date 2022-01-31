@@ -1,0 +1,2 @@
+Recv-Q Send-Q  Local Address:Port Peer Address:Port Process
+0      64     192.168.10.200:ssh  192.168.10.1:50592       
