@@ -1,0 +1,2 @@
+192.168.10.1 dev ens33 lladdr 00:50:56:c0:00:08 REACHABLE
+192.168.10.2 dev ens33 lladdr 00:50:56:fd:4f:ea STALE
