@@ -1,0 +1,4 @@
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp       32      0 server1.example.c:49086 oscp-router01.gno:https CLOSE_WAIT 
+tcp        0     64 server1.example.com:ssh 192.168.10.1:50592      ESTABLISHED
