@@ -1,0 +1,5 @@
+DEVICE      TYPE      STATE                   CONNECTION 
+ens33       ethernet  connected               ens33      
+virbr0      bridge    connected (externally)  virbr0     
+lo          loopback  unmanaged               --         
+virbr0-nic  tun       unmanaged               --         
