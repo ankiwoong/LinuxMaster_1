@@ -1,0 +1,3 @@
+NAME    UUID                                  TYPE      DEVICE 
+ens33   7df2519c-5e74-49ae-aac7-988b18b2435b  ethernet  ens33  
+virbr0  7f0365a6-97f4-40db-bfbf-ca495e9831a6  bridge    virbr0 
